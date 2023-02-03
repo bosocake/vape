@@ -8,15 +8,20 @@ function clone() {
     }
 }
 
-document.getElementById('favorites').onclick = favorites
-
-function favorites(){
-    let check = document.getElementById("favorites");
-    if (check.style.color != "red") {
-        document.getElementById('favorites').style.cssText = 'color: red;';
+function favorites() {
+    if (this.style.background != "lightcoral") {
+        this.style.cssText = 'background: lightcoral;';
     } 
     else {
-        document.getElementById('favorites').style.cssText = 'color: #fff;';
+        this.style.cssText = 'background: #00000040;';
     }
-    
+}
+
+function trash() {
+    if (this.style.background != "lightsalmon") {
+        this.style.cssText = 'background: lightsalmon;';
+    } 
+    else {
+        this.style.cssText = 'background: #00000040;';
+    }
 }
