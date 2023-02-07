@@ -28,17 +28,62 @@ div, a{
 }
 body{
     background: #e3e2e7;
+    overflow: hidden;
+
 }
 .header{
     height: var(--height-header);
-    width: 100%;
-    background: #fff;
-    box-shadow: 0 0 2px 2.5px rgba(0, 0, 0, 0.125);
     position: fixed;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    max-width: 1235px;
+    padding: 0 20px;
+}
+.menu{
+    margin-left: -170px;
 }
 .header_height{
     height: var(--height-header);
+    background: #fff;
+    box-shadow: 0 0 2px 2.5px rgba(0, 0, 0, 0.125);
 }
+.menu{
+    background: red;
+    align-content: flex-start;
+    position: absolute;
+    height: 100vh;
+    color: #fff;
+    background: rgb(227, 226, 231);
+    box-shadow: 0 0 2px 2.5px rgba(0, 0, 0, 0.125);
+}
+.menu_title{
+    padding: 10px;
+    height: var(--height-header);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 900;
+    background: #ffffff;
+}
+.menu_open_close{
+    border: 2px solid #1f1f1f;
+    margin-right: -55px;
+    width: 25px;
+    height: 25px;
+}
+.menu_group{
+    padding: 10px;
+    align-content: flex-start;
+    height: 100vh;
+    gap: 5px;
+}
+.menu_group a{
+    width: 150px;
+    border-right: 2px solid #1f1f1f;
+    color: #1f1f1f;
+}
+
 .main{
     margin: auto;
     max-width: 1235px;
