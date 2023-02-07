@@ -7,7 +7,6 @@ function clone() {
         clone = parent.appendChild(clone);
     }
 }
-
 function favorites() {
     if (this.style.background != "lightcoral") {
         this.style.cssText = 'background: lightcoral;';
@@ -18,10 +17,10 @@ function favorites() {
 }
 
 function trash() {
-    if (this.style.background != "lightsalmon") {
-        this.style.cssText = 'background: lightsalmon;';
+    if (this.style.background != "white") {
+        this.style.cssText = 'background: white; color: #2196f3;';
     } 
     else {
-        this.style.cssText = 'background: #00000040;';
+        this.style.cssText = 'background: #2196f3; color: white;';
     }
 }
