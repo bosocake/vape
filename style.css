@@ -87,12 +87,12 @@ body{
     user-select: none;
     border-radius: 5px;
 }
-@media (max-width: 480px) {
+@media (max-width: 395px) {
     .group{
         grid-template-columns: 1fr 1fr;
     }
 }
-@media (max-width: 400px) {
+@media (max-width: 326px) {
     .group{
         grid-template-columns: 1fr;
     }
