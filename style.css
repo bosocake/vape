@@ -1,5 +1,6 @@
 :root{
     --height: 40px;
+    --height-header: 70px;
 }
 *{
     padding: 0;
@@ -28,13 +29,23 @@ div, a{
 body{
     background: #e3e2e7;
 }
+.header{
+    height: var(--height-header);
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 0 2px 2.5px rgba(0, 0, 0, 0.125);
+    position: fixed;
+}
+.header_height{
+    height: var(--height-header);
+}
 .main{
     margin: auto;
-    max-width: 1245px;
+    max-width: 1235px;
 }
 .group{
     grid-template-columns: repeat(auto-fit, 200px);
-    margin: 10px;
+    margin: 10px 5px;
     gap: 5px;
     justify-content: center;
 }
@@ -92,7 +103,7 @@ body{
         grid-template-columns: 1fr 1fr;
     }
 }
-@media (max-width: 326px) {
+@media (max-width: 300px) {
     .group{
         grid-template-columns: 1fr;
     }
