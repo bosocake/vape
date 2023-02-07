@@ -16,10 +16,10 @@
     transition: all 0.1s ease;
     font-size: 12px;
 }
-::-webkit-scrollbar{
+/* ::-webkit-scrollbar{
     width: 10px;
     background: #fff;
-}
+} */
 img{
     width: 100%;
 }
@@ -28,8 +28,6 @@ div, a{
 }
 body{
     background: #e3e2e7;
-    overflow: hidden;
-
 }
 .header{
     height: var(--height-header);
@@ -39,6 +37,7 @@ body{
     margin: 0 auto;
     max-width: 1235px;
     padding: 0 20px;
+    background: #fff;
 }
 .menu{
     margin-left: -170px;
@@ -55,7 +54,7 @@ body{
     height: 100vh;
     color: #fff;
     background: rgb(227, 226, 231);
-    box-shadow: 0 0 2px 2.5px rgba(0, 0, 0, 0.125);
+    box-shadow: 0 0 2px 2.5px rgba(0, 0, 0, 0);
 }
 .menu_title{
     padding: 10px;
