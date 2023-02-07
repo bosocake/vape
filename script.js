@@ -24,3 +24,14 @@ function trash() {
         this.style.cssText = 'background: #2196f3; color: white;';
     }
 }
+
+function menu() {
+    if (this.style.background != "white") {
+        this.style.cssText = 'background: white; margin-right: 0;';
+        document.getElementById('menu').style.cssText = 'margin-left: 0;'
+    } 
+    else {
+        this.style.cssText = 'background: #fff; margin-right: -55px;';
+        document.getElementById('menu').style.cssText = 'margin-left: -170;'
+    }
+}
