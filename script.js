@@ -27,14 +27,15 @@ function trash() {
 
 function menu() {
     if (this.style.background != "white") {
-        this.style.cssText = 'background: white; margin-right: 0;';
-        document.getElementById('menu').style.cssText = 'margin-left: 0; box-shadow: 0 0 2px 2.5px rgba(0, 0, 0, 0.125);'
-        document.getElementById('header').style.cssText = 'overflow: none;';
+        this.style.cssText = 'background: white;  border-radius: 360px;';
+        document.getElementById('menu').style.cssText = 'margin-left: 0px; box-shadow: 0 0 2px 2.5px rgba(0, 0, 0, 0.125);'
+        document.getElementById('header').style.cssText = 'overflow: visible;';
         
     } 
     else {
-        this.style.cssText = 'background: #fff; margin-right: -55px;';
-        document.getElementById('menu').style.cssText = 'margin-left: -170; box-shadow: 0 0 2px 2.5px rgba(0, 0, 0, 0);'
+        
+        this.style.cssText = 'background: #fff;  border-radius: 0px;';
+        document.getElementById('menu').style.cssText = 'margin-left: -170px; box-shadow: 0 0 2px 2.5px rgba(0, 0, 0, 0);'
         document.getElementById('header').style.cssText = 'overflow: hidden;';
 
     }
