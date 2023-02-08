@@ -38,6 +38,11 @@ body{
     max-width: 1235px;
     padding: 0 20px;
     background: #fff;
+    overflow: hidden;
+}
+.logo{
+    align-items: center;
+    font-weight: 900;
 }
 .menu{
     margin-left: -170px;
@@ -65,9 +70,16 @@ body{
     font-weight: 900;
     background: #ffffff;
 }
+.menu_logo{
+    display: flex;
+
+    margin-right: -130px;
+    gap: 10px;
+
+}
 .menu_open_close{
     border: 2px solid #1f1f1f;
-    margin-right: -55px;
+    
     width: 25px;
     height: 25px;
 }
@@ -75,14 +87,14 @@ body{
     padding: 10px;
     align-content: flex-start;
     height: 100vh;
-    gap: 5px;
+    gap: 10px;
 }
 .menu_group a{
     width: 150px;
-    border-right: 2px solid #1f1f1f;
+    border-right: 1px solid #1f1f1f;
     color: #1f1f1f;
+    padding: 2.5px 0;
 }
-
 .main{
     margin: auto;
     max-width: 1235px;
