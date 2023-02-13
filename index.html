@@ -8,61 +8,44 @@
     <title>BOSOVAPE</title>
 </head>
 <body>
-    <div class="header" id="header">
-        <div class="menu" id="menu">
-            <div class="menu_title">
-                <div class="menu_h1">
-                    МЕНЮ
-                </div>
-                <div class="menu_logo" id="menu_logo">
-                    <div class="menu_open_close" onclick="menu.apply(this)">
-
-                    </div>
-                    <div class="logo">
-                        BOSOVAPE
-                    </div>
-                </div>
+    <div class="container">
+        <div class="header" id="header">
+            <div class="header_logo">
+                BOSO<span class="header_logo_bold">VAPE</span>
             </div>
-            <div class="menu_group">
-                <a href="">
-                    ГЛАВНАЯ
-                </a>
-                <a href="">
-                    ОДНОРАЗКИ
-                </a>
-                <a href="">
-                    ЖИЖКИ
-                </a>
+            <div class="header_location">
+                <img class="header_location_ico" src="img/ico/location.svg" alt="">
+                Алматы
             </div>
         </div>
-    </div>
-    <div class="header_height"></div>
-    <div class="main">
-        <div class="group" id="group">
-            <div class="block">
-                <div class="photo">
-                    <img class="img" src="liquids.png">
-                </div>
-                <div class="info">
-                    <div class="title">
-                        <div class="name">
-                            cataclism - банан клубника холодок с мятой
-                        </div>
+        
+        <div class="main">
+            <div class="group" id="group">
+                <div class="block" id="block" mouseover="trash.apply(this)">
+                    <div class="photo">
+                        <img class="img" src="https://el-cigarette.com/fs/sources/fc/2f/4a/36/6059093a4956a0c7856e0a63.png">
                     </div>
-                    <div class="price_block">
-                        <div class="price">
-                            3200T
+                    <div class="info">
+                        <div class="title">
+                            <div class="name">
+                                cataclism - банан клубника холодок с мятой
+                            </div>
                         </div>
+                        <div class="price_block">
+                            <div class="price">
+                                3200T
+                            </div>
+                        </div>
+                        <div class="buy">
+                            <div class="trash" onclick="trash.apply(this)">
+                                КОРЗИНУ
+                            </div>
+                            <div class="favorites" id="favorites" onclick="favorites.apply(this)">
+                                <img src="" alt="">
+                            </div>
+                        </div>
+                        
                     </div>
-                    <div class="buy">
-                        <div class="trash" onclick="trash.apply(this)">
-                            КОРЗИНУ
-                        </div>
-                        <div class="favorites" id="favorites" onclick="favorites.apply(this)">
-                            <img src="" alt="">
-                        </div>
-                    </div>
-                    
                 </div>
             </div>
         </div>
