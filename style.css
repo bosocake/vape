@@ -16,10 +16,10 @@
     transition: all 0.1s ease;
     font-size: 12px;
 }
-/* ::-webkit-scrollbar{
-    width: 10px;
+::-webkit-scrollbar{
+    width: 0;
     background: #fff;
-} */
+}
 img{
     width: 100%;
 }
@@ -27,92 +27,70 @@ div, a{
     display: grid;
 }
 body{
-    background: #e3e2e7;
+
+}
+.container{
+    max-width: 1120px;
+    margin: auto;
 }
 .header{
-    height: var(--height-header);
-    position: fixed;
-    right: 0;
-    left: 0;
-    margin: 0 auto;
-    max-width: 1235px;
-    padding: 0 20px;
-    background: #fff;
-    overflow: hidden;
-}
-.logo{
-    align-items: center;
-    font-weight: 900;
-}
-.menu{
-    margin-left: -170px;
-}
-.header_height{
+    display: flex;
     height: var(--height-header);
     background: #fff;
-    box-shadow: 0 0 2px 2.5px rgba(0, 0, 0, 0.125);
-}
-.menu{
-    background: red;
-    align-content: flex-start;
-    position: absolute;
-    height: 100vh;
-    color: #fff;
-    background: rgb(227, 226, 231);
-    box-shadow: 0 0 2px 2.5px rgba(0, 0, 0, 0);
-}
-.menu_title{
-    padding: 10px;
-    height: var(--height-header);
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    font-weight: 900;
-    background: #ffffff;
+    padding: 20px;
+    gap: 60px;
 }
-.menu_logo{
+.header *{
+    font-size: 24px;
+}
+.header .header_logo{
     display: flex;
-
-    margin-right: -130px;
-    gap: 10px;
-
+    font-weight: 300;
 }
-.menu_open_close{
-    border: 2px solid #1f1f1f;
-    
-    width: 25px;
-    height: 25px;
+.header .header_logo span{
+    font-weight: 900;
 }
-.menu_group{
-    padding: 10px;
-    align-content: flex-start;
-    height: 100vh;
-    gap: 10px;
+.header .header_location{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
 }
-.menu_group a{
-    width: 150px;
-    border-right: 1px solid #1f1f1f;
-    color: #1f1f1f;
-    padding: 2.5px 0;
+.header .header_location_ico{
+    padding: 25px 10px;
+    height: var(--height-header);
 }
 .main{
     margin: auto;
-    max-width: 1235px;
+    width: 100%;
+    padding: 20px;
 }
 .group{
     grid-template-columns: repeat(auto-fit, 200px);
-    margin: 10px 5px;
-    gap: 5px;
+    gap: 20px;
     justify-content: center;
 }
 .block{
     background: #fff;
     gap: 10px;
     padding: 10px;
+    box-shadow: 0 0 2.5px 2.5px #00000015;
+    border-radius: 5px;
+    transition: all 0.25s ease;
+    height: 100%;
+    
+}
+.block:hover{
+    box-shadow: 0 0 5px 5px #00000025;
+}
+.photo:hover{
+    
 }
 .photo{
+    border-radius: 5px;
     max-width: 200px;
     margin: auto;
+    height: 100%;
 }
 .info{
     gap: 10px;
