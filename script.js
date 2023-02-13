@@ -23,6 +23,9 @@ function trash() {
     else {
         this.style.cssText = 'background: #2196f3; color: white;';
     }
+    let audio = new Audio();
+        audio.src = 'sounds/map_selection/maps_checkbox.mp3';
+        audio.autoplay = true;
 }
 
 function menu() {
@@ -40,3 +43,4 @@ function menu() {
 
     }
 }
+
