@@ -32,6 +32,7 @@ body{
 .container{
     max-width: 1120px;
     margin: auto;
+
 }
 .header{
     display: flex;
@@ -39,7 +40,9 @@ body{
     background: #fff;
     align-items: center;
     padding: 20px;
-    gap: 60px;
+
+    box-shadow: 0 0 2.5px 2.5px #00000015;
+
 }
 .header *{
     font-size: 24px;
@@ -84,7 +87,7 @@ body{
     box-shadow: 0 0 5px 5px #00000025;
 }
 .photo:hover{
-    
+
 }
 .photo{
     border-radius: 5px;
